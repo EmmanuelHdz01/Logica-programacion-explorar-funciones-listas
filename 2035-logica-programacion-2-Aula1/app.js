@@ -14,7 +14,6 @@ function verificarIntento() {
     console.log(numeroDeUsuario);
     console.log(numeroDeUsuario == numeroSecreto);
 
-
     return;
 }
 
