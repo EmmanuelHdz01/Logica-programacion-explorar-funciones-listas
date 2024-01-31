@@ -1,3 +1,5 @@
-function texto() {
-    let texto
+function mensaje() {
+    console.log('Hola, mundo');
 }
+
+mensaje();
