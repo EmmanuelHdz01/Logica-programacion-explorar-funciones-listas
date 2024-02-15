@@ -14,7 +14,7 @@ function factorialUsuario(n) {
     // numeroUsuario = numeroUsuario!;
     if (n != 0) {
         for (contador = 1; contador <= n; contador++) {
-            factorial *= contador;
+            factorial = factorial * contador;
             console.log(factorial);
         }
     } else {
