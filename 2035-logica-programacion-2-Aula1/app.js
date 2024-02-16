@@ -1,5 +1,6 @@
 let numeroSecreto = 0;
 let intentos = 0;
+let listaNumeroSorteados = [];
 
 console.log(numeroSecreto);
 
@@ -41,7 +42,17 @@ function limpiarCaja() {
 }
 
 function generarNumeroSecreto() {
-    return Math.floor(Math.random() * 10) + 1;
+    let numeroGenerado = Math.floor(Math.random() * 10) + 1;
+    // Si el numero generado esta incluido en la lista 
+
+    console.log(numeroGenerado);
+    console.log(listaNumeroSorteados);
+    if(listaNumeroSorteados.includes(numeroGenerado)) {
+        return generarNumeroSecreto;
+    } else {
+        listaNumeroSorteados.push(numeroGenerado);
+        return numeroGenerado;
+    }
 }
 
 function condicionesIniciales() {
